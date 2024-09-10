@@ -8,7 +8,7 @@ def power(n):
 
 def main():
     n=int(input())
-    print(f"2^{n} = {power(n)}")
+    print(f"2^{n}={power(n)}")
 
 if __name__ == "__main__":
     main()
