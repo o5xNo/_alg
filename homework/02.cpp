@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void printPermutation(const vector<int>& perm, int x) {
+void myprint(const vector<int>& perm, int x) {
 
     int a=1;
     cout<<"{";
@@ -16,15 +16,15 @@ void printPermutation(const vector<int>& perm, int x) {
     cout << endl;
 }
 
-void permute(vector<int>& nums, int start) {
+void mysort(vector<int>& nums, int start) {
     if (start == nums.size()) {
-        printPermutation(nums,nums.size());
+        myprint(nums,nums.size());
         return;
     }
 
     for (int i = start; i < nums.size(); ++i) {
         swap(nums[start], nums[i]);
-        permute(nums, start + 1);
+        mysort(nums, start + 1);
         swap(nums[start], nums[i]);
     }
 }
@@ -40,7 +40,7 @@ int main() {
         {
             nums[j]=j+1;
         }
-        permute(nums, 0);
+        mysort(nums, 0);
     }
     return 0;
 }
