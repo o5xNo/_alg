@@ -36,7 +36,7 @@ int main() {
     for(int i=0;i<x;i++)
     {
         vector<int> nums(i+1);
-        for(int j=0;j<i;j++)
+        for(int j=0;j<=i;j++)
         {
             nums[j]=j+1;
         }
