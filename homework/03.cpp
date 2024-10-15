@@ -4,12 +4,10 @@
 
 using namespace std;
 
-// ­pºâ
 double f(double x, double y) {
     return sin(x * y) + exp(x);
 }
 
-// ­pºâ±è«×
 tuple<double, double> gradient(double x, double y) {
     double dfdx = y * cos(x * y) + exp(x); 
     double dfdy = x * cos(x * y);           
