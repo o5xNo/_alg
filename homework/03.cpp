@@ -25,6 +25,8 @@ int main() {
     cout << "f(" <<x<< "," <<y<< ") = " <<fx<< endl;
     cout << "df/dx = " << dfdx << endl;
     cout << "df/dy = " << dfdy << endl;
+    cout << "?f("<<x<<","<<y<<") = ("<< dfdx<<","<<dfdy<<")" << endl;
+    cout << "?f("<<x<<","<<y<<")=(""y*cos(x*y)+e^x , x*cos(x*y))" << endl;
 
     return 0;
 }
